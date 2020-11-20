@@ -22,21 +22,21 @@
     float: right;
     height: calc(100vh - 102px);
     width: 200px;
-    border:1px solid rgb(32, 30, 30);
-    padding:10px;
-    box-sizing:border-box;
+    border: 1px solid rgb(32, 30, 30);
+    padding: 10px;
+    box-sizing: border-box;
     background-color: rgb(190, 190, 190);
 }
 
 .left_box {
     float: left;
-    border:1px solid rgb(32, 30, 30);
-    padding:30px;
-	box-sizing:border-box;
+    border: 1px solid rgb(32, 30, 30);
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .simple_border {
-    border:1px solid rgb(32, 30, 30);
+    border: 1px solid rgb(32, 30, 30);
 }
 
 .bottom_nav {
@@ -55,7 +55,6 @@
 
 .mybtn:hover {
     background-color: rgb(87, 92, 107);
-
 }
 
 .margin_15 {
@@ -81,9 +80,7 @@
     flex-basis: 100%;
 }
 
-
-
-.gh-card > .inside {
+.gh-card>.inside {
     height: 100%;
     border-radius: 10px;
     background-color: var(--primary-color);
@@ -91,7 +88,7 @@
     display: flex;
 }
 
-.gh-card > .inside:hover {
+.gh-card>.inside:hover {
     transform: translateY(-2px);
     box-shadow: 2px 6px 12px 0 rgba(0, 0, 0, 0.2);
 }
@@ -109,7 +106,6 @@
     .gh-card {
         flex-basis: 33.333333%;
     }
-
     .d-up-600-scores {
         display: flex;
     }
@@ -125,8 +121,6 @@
     display: none;
 }
 
-
-
 @media screen and (max-width: 599px) {
     .d-below-600-block {
         display: flex;
@@ -137,13 +131,11 @@
         align-items: initial;
         justify-content: space-around;
     }
-    .card_box{
-
-        min-height: 100%; 
+    .card_box {
+        min-height: 100%;
         display: block;
         align-items: center;
     }
-    
     .d-below-600-scores {
         display: flex;
     }
@@ -153,17 +145,16 @@
     font-family: Shabnam;
 }
 
-
-table.table-bordered > thead > tr > th{
-border:1px solid rgb(0, 0, 0);
+table.table-bordered>thead>tr>th {
+    border: 1px solid rgb(0, 0, 0);
 }
 
-table.table-bordered > tbody > tr > td{
-    border:1px solid rgb(0, 0, 0);
+table.table-bordered>tbody>tr>td {
+    border: 1px solid rgb(0, 0, 0);
 }
 
-table.table-bordered > tbody > tr > th{
-    border:1px solid rgb(0, 0, 0);
+table.table-bordered>tbody>tr>th {
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .d-below-600-scores {
@@ -174,3 +165,112 @@ table.table-bordered > tbody > tr > th{
     display: none;
 }
 
+
+/* login page csss */
+
+@media screen and (min-width: 600px) {
+    .fields_section {
+        position: relative;
+        background-color: wheat;
+        float: left;
+        width: 40%;
+        max-width: 500px;
+        justify-content: space-between;
+        align-content: flex-start;
+        display: inline;
+        text-align: center;
+    }
+    .input_field_button {
+        position: relative;
+        width: 300px;
+        display: inline-block;
+        align-self: stretch;
+        flex: content;
+        flex-grow: initial;
+        -ms-flex-align: stretch;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border-radius: 5px;
+    }
+    .login_box {
+        background-color: wheat;
+        width: 80%;
+        max-width: 1000px;
+        vertical-align: middle;
+        justify-content: space-between;
+    }
+    .image_box {
+        background-color: wheat;
+        width: 40%;
+        float: left;
+        max-width: 500px;
+        vertical-align: middle;
+        align-content: center;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .fields_section {
+        position: absolute;
+        background-color: wheat;
+        float: left;
+        width: 100%;
+        max-width: 500px;
+        min-width: 310px;
+        justify-content: space-between;
+        align-content: center;
+        display: inline;
+        overflow: hidden;
+        object-fit: cover;
+        text-align: center;
+    }
+    .input_field_button {
+        position: relative;
+        width: 300px;
+        display: inline-block;
+        align-self: stretch;
+        flex: content;
+        flex-grow: initial;
+        -ms-flex-align: stretch;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding-right: 2%;
+        border-radius: 5px;
+    }
+    .login_box {
+        background-color: wheat;
+        width: 90%;
+        max-width: 450px;
+        min-width: 350px;
+        vertical-align: middle;
+        justify-content: space-between;
+    }
+    .image_box {
+        background-color: wheat;
+        width: 40%;
+        float: left;
+        max-width: 500px;
+        vertical-align: middle;
+        align-content: center;
+        display: none;
+        overflow: hidden;
+        object-fit: cover;
+    }
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.image_centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-70%, -50%);
+}
