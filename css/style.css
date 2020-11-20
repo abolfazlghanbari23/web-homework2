@@ -37,7 +37,6 @@
 
 .simple_border {
     border:1px solid rgb(32, 30, 30);
-    padding:10px;
 }
 
 .bottom_nav {
@@ -55,7 +54,7 @@
 }
 
 .mybtn:hover {
-    background-color: rgb(191, 197, 214);
+    background-color: rgb(87, 92, 107);
 
 }
 
@@ -89,6 +88,7 @@
     border-radius: 10px;
     background-color: var(--primary-color);
     transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    display: flex;
 }
 
 .gh-card > .inside:hover {
@@ -109,6 +109,10 @@
     .gh-card {
         flex-basis: 33.333333%;
     }
+
+    .d-up-600-scores {
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -120,6 +124,8 @@
 .d-below-600-block {
     display: none;
 }
+
+
 
 @media screen and (max-width: 599px) {
     .d-below-600-block {
@@ -137,8 +143,34 @@
         display: block;
         align-items: center;
     }
+    
+    .d-below-600-scores {
+        display: flex;
+    }
 }
 
 .f-shabnam {
     font-family: Shabnam;
 }
+
+
+table.table-bordered > thead > tr > th{
+border:1px solid rgb(0, 0, 0);
+}
+
+table.table-bordered > tbody > tr > td{
+    border:1px solid rgb(0, 0, 0);
+}
+
+table.table-bordered > tbody > tr > th{
+    border:1px solid rgb(0, 0, 0);
+}
+
+.d-below-600-scores {
+    display: none;
+}
+
+.d-up-600-scores {
+    display: none;
+}
+
