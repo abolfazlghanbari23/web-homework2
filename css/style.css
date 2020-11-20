@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #b582df;
+}
+
+.bg-custom {
+    background-color: var(--primary-color);
+}
+
+.nav-height-padding-top {
+    padding-top: 60px;
+}
+
+.d-600-block {
+    display: none;
+}
+
+.d-below-600-block-bottom-nav {
+    display: none;
+}
+
+.right_box {
+    float: right;
+    height: calc(100vh - 102px);
+    width: 200px;
+    border:1px solid rgb(32, 30, 30);
+    padding:10px;
+    box-sizing:border-box;
+    background-color: rgb(190, 190, 190);
+}
+
+.left_box {
+    float: left;
+    border:1px solid rgb(32, 30, 30);
+    padding:30px;
+	box-sizing:border-box;
+}
+
+.simple_border {
+    border:1px solid rgb(32, 30, 30);
+    padding:10px;
+}
+
+.bottom_nav {
+    background-color: #c4ebe5;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.mybtn {
+    width: 80px;
+    flex-basis: 1;
+    background-color: rgb(191, 197, 214);
+}
+
+.mybtn:hover {
+    background-color: rgb(191, 197, 214);
+
+}
+
+.margin_15 {
+    margin: 15px;
+}
+
+#main {
+    border: 1px solid rgb(164, 164, 164);
+    height: calc(100vh - 102px);
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.gh-card {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    display: block;
+    flex-basis: 100%;
+}
+
+
+
+.gh-card > .inside {
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.gh-card > .inside:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 600px) {
+    .d-600-block {
+        display: flex;
+    }
+    .card_box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .gh-card {
+        flex-basis: 33.333333%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gh-card {
+        flex-basis: 25%;
+    }
+}
+
+.d-below-600-block {
+    display: none;
+}
+
+@media screen and (max-width: 599px) {
+    .d-below-600-block {
+        display: flex;
+    }
+    .d-below-600-block-bottom-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .card_box{
+
+        min-height: 100%; 
+        display: block;
+        align-items: center;
+    }
+}
