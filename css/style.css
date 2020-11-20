@@ -128,7 +128,7 @@
     .d-below-600-block-bottom-nav {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: initial;
         justify-content: space-around;
     }
     .card_box{
@@ -137,4 +137,8 @@
         display: block;
         align-items: center;
     }
+}
+
+.f-shabnam {
+    font-family: Shabnam;
 }
