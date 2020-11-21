@@ -1,0 +1,9 @@
+server {
+    server_name  192.168.99.135;
+
+    location / {
+        root /home/webcourse/WEB-HOMEWORK2/front;
+    }
+
+}
+
