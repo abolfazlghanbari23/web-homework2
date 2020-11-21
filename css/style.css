@@ -10,7 +10,15 @@
     padding-top: 60px;
 }
 
+.d-600-flex {
+    display: none;
+}
+
 .d-600-block {
+    display: none;
+}
+
+.d-below-600-block {
     display: none;
 }
 
@@ -102,9 +110,14 @@
 }
 
 @media screen and (min-width: 600px) {
-    .d-600-block {
+    .d-600-flex {
         display: flex;
     }
+
+    .d-600-block {
+        display: block;
+    }
+
     .card_box {
         display: flex;
         flex-direction: row;
@@ -125,13 +138,16 @@
     }
 }
 
-.d-below-600-block {
+.d-below-600-flex {
     display: none;
 }
 
 @media screen and (max-width: 599px) {
-    .d-below-600-block {
+    .d-below-600-flex {
         display: flex;
+    }
+    .d-below-600-block {
+        display: block;
     }
     .d-below-600-block-bottom-nav {
         display: flex;

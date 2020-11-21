@@ -13,12 +13,12 @@
 
 </head>
 
-<body class="rtl f-shabnam">
+<body class="rtl f-shabnam" style="overflow-y: auto; margin-bottom: 700px;">
 
     <!-- login -->
     <div id="login">
 
-        <nav class="navbar shadow navbar-expand navbar-light bg-custom d-600-block">
+        <nav class="navbar shadow navbar-expand navbar-light navbar-right bg-custom d-600-flex">
             <a class="navbar-brand" href="#">
                 <img src="images/logo/darsman-logo.png" alt="Nabz" width="30" height="30">
             </a>
@@ -35,7 +35,8 @@
 
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 text-center" type="search" placeholder="نوار جستجو" aria-label="Search">
+                    <input class="form-control mr-sm-2 text-center" type="search" placeholder="نوار جستجو"
+                        aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ورود</button>
                 </form>
 
@@ -43,17 +44,15 @@
         </nav>
 
 
-        <nav class="navbar shadow navbar-expand navbar-light bg-custom d-below-600-block simple_border">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo/darsman-logo.png" alt="Nabz" width="30" height="30">
-            </a>
+        <nav class="navbar shadow navbar-expand navbar-light navbar-right bg-custom d-below-600-flex simple_border">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo/darsman-logo.png" alt="Nabz" width="30" height="30">
+                </a>
+            </div>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="form-inline float-left">
-                    <input class="form-control mr-sm-2 text-center" type="search" placeholder="نوار جستجو" aria-label="Search">
-                </form>
-
-
+            <div>
+                <input class="form-control text-center" type="search" placeholder="نوار جستجو" aria-label="Search">
             </div>
         </nav>
 
@@ -61,9 +60,9 @@
             <div class="login_box center row">
 
                 <div class="fields_section column" dir="rtl">
-                    <input type="text" class="input_field_button" value="نام">
-                    <input type="text" class="input_field_button" value="ایمیل">
-                    <input type="text" class="input_field_button" value="رمز عبور">
+                    <input type="text" class="input_field_button" placeholder="نام">
+                    <input type="text" class="input_field_button" placeholder="ایمیل">
+                    <input type="text" class="input_field_button" placeholder="رمز عبور">
                     <label for="vehicle2" style="display: block;">حداقل ۸ کاراکتر باشد.</label>
                     <br>
 
